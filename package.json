@@ -1,0 +1,38 @@
+{
+  "name": "match-replace-all",
+  "version": "1.0.0",
+  "description": "Finds strings by given match and replaces the content using callback function",
+  "main": "lib/index.js",
+  "repository": "https://github.com/pionl/match-replace-all",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --out-dir lib src",
+    "lint": "node_modules/.bin/eslint ./src/. --ext .js",
+    "lint-fix": "node_modules/.bin/eslint --fix ./src/. --ext .js"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "javascript",
+    "regex",
+    "replaceall"
+  ],
+  "author": "Martin Kluska <martin@kluska.cz>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^20.0.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^19.0.2"
+  }
+}
