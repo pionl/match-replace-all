@@ -10,7 +10,9 @@ npm install match-replace-all
 ## Usage
 
 - Create a new RegExp object with `global` and `multiline` option.
-- Provide a callback that will receive match array and return a new string that will replace the **original string**
+- Provide a callback that will receive match array and return a new string that will replace the **original string**.
+- Callback can return `false` to skip replacement.
+- If the new value is same as original, no replacement is done.
 
 ```javascript
 import matchReplaceAll from 'match-replace-all'

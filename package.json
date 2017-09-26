@@ -1,6 +1,6 @@
 {
   "name": "match-replace-all",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Finds strings by given match and replaces the content using callback function",
   "main": "lib/index.js",
   "repository": "https://github.com/pionl/match-replace-all",

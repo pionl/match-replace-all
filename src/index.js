@@ -15,11 +15,17 @@ export default function matchReplaceAll (globalRegex, string, replaceValueCallba
     // Loop all matches and build a map which values to to replace
     while ((matches = globalRegex.exec(string)) !== null) {
         // Create new value
+        const originalValue = matches[0]
         const newValue = replaceValueCallback(matches)
+
+        // If the string is same or false is received, skip replacement
+        if (newValue === false || originalValue === newValue) {
+            continue
+        }
 
         // Store info which part of string to replace
         toReplace.push([
-            matches[0],
+            originalValue,
             newValue
         ])
     }
